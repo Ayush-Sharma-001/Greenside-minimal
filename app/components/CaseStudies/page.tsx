@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 
+
 const CaseStudies: React.FC = () => {
   return (
     <section id="case-studies" className="bg-white lg:h-screen text-black flex items-center py-16  md:px-12  lg:px-24">
