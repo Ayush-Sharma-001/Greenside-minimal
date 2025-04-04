@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
         <div className="container mx-auto flex items-center justify-between py-4">
           {/* Logo */}
           <div className="text-xl font-bold cursor-pointer">
-            <a href="#hero">lungo.</a>
+            <a href="#hero">BORINGDESIGNER/</a>
           </div>
 
           {/* Desktop Nav */}
@@ -62,7 +62,7 @@ const Navbar: React.FC = () => {
 
           {/* Hamburger */}
           <div className="md:hidden">
-            <button className="text-gray-400 focus:outline-none" onClick={toggleMobileMenu}>
+            <button className="text-white focus:outline-none" onClick={toggleMobileMenu}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6"

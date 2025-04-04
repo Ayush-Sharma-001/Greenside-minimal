@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-2 md:grid-cols-5 gap-12 mb-12 md:py-30 py-0 md:mb-0">
           {/* Logo */}
           <div className="col-span-3 ">
-            <h3 className="text-4xl font-bold">lungo.</h3>
+            <h3 className="text-3xl font-bold">BORINGDESIGNER/</h3>
           </div>
 
           {/* Company Links */}

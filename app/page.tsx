@@ -1,4 +1,5 @@
 
+
 import Navbar from "./components/navbar/page";
 import Hero from "./components/hero/page";
 import About from "./components/about/page";
