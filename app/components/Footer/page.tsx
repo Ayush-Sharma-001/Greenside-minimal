@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
     <footer id="contact-us" className="bg-white text-black h-full py-12 px-6 md:px-12 lg:px-24 flex flex-col justify-evenly">
       <div className="container mx-auto space-y-12 ">
         {/* Top Section */}
-        <div className="flex flex-col md:flex-row justify-between items-center border-b border-gray-300 pb-8">
+        <div className="flex flex-col gap-6 md:flex-row justify-between items-center border-b border-gray-300 pb-8">
           <p className="text-center text-xl md:text-left text-gray-600 mb-8 md:mb-0">
             Stay updated on our latest developments, insights, and opportunities by following us on <span className='font-semibold'>LinkedIn</span>.
           </p>
