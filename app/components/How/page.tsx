@@ -9,6 +9,9 @@ const How: React.FC = () => {
 
   // Intersection Observers for both lines
   useEffect(() => {
+    const leftElement = leftLineRef.current;
+    const rightElement = rightLineRef.current;
+
     const leftObserver = new IntersectionObserver(
       ([entry]) => setLeftVisible(entry.isIntersecting),
       { threshold: 0.1 }
@@ -18,12 +21,12 @@ const How: React.FC = () => {
       { threshold: 0.1 }
     );
 
-    if (leftLineRef.current) leftObserver.observe(leftLineRef.current);
-    if (rightLineRef.current) rightObserver.observe(rightLineRef.current);
+    if (leftElement) leftObserver.observe(leftElement);
+    if (rightElement) rightObserver.observe(rightElement);
 
     return () => {
-      if (leftLineRef.current) leftObserver.unobserve(leftLineRef.current);
-      if (rightLineRef.current) rightObserver.unobserve(rightLineRef.current);
+      if (leftElement) leftObserver.unobserve(leftElement);
+      if (rightElement) rightObserver.unobserve(rightElement);
     };
   }, []);
 
@@ -44,12 +47,9 @@ const How: React.FC = () => {
               {/* Left Line */}
               <div
                 ref={leftLineRef}
-                className={`
-                  absolute left-0 top-0 h-full w-1 bg-lime-600
-                  transition-transform duration-[1500ms] ease-in-out
-                  origin-top
-                  ${leftVisible ? "scale-y-100" : "scale-y-0"}
-                `}
+                className={`absolute left-0 top-0 h-full w-1 bg-lime-600 transition-transform duration-[1500ms] ease-in-out origin-top ${
+                  leftVisible ? "scale-y-100" : "scale-y-0"
+                }`}
               ></div>
 
               <div className="pl-8">
@@ -84,12 +84,9 @@ const How: React.FC = () => {
               {/* Right Line */}
               <div
                 ref={rightLineRef}
-                className={`
-                  absolute right-0 top-0 h-full w-1 bg-lime-600
-                  transition-transform duration-[1500ms] ease-in-out
-                  origin-top
-                  ${rightVisible ? "scale-y-100" : "scale-y-0"}
-                `}
+                className={`absolute right-0 top-0 h-full w-1 bg-lime-600 transition-transform duration-[1500ms] ease-in-out origin-top ${
+                  rightVisible ? "scale-y-100" : "scale-y-0"
+                }`}
               ></div>
 
               <div className="pr-8">
