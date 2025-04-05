@@ -3,15 +3,15 @@ import React from 'react';
 
 const About: React.FC = () => {
   return (
-    <section id="about-us" className="bg-white text-black h-screen flex items-center">
+    <section id="about-me" className="bg-[#FFFBDF] text-black h-screen flex items-center">
       <div className="container mx-auto px-6 md:px-12 lg:px-24 flex flex-col items-start justify-evenly h-full">
         {/* Left Section: Title */}
         <div className="w-full mb-8 md:mb-0">
-          <h3 className="text-md font-medium tracking-widest text-gray-500 uppercase mb-2 md:mb-8">
-            About Us
+          <h3 className="text-md font-medium tracking-widest text-[#FD4A6C] uppercase mb-2 md:mb-8">
+          About Me
           </h3>
           <h2 className="text-3xl md:text-4xl lg:text-5xl leading-tight">
-            Who we are: Our story and missioning
+          Who I am: My story and purpose
           </h2>
         </div>
 
@@ -23,15 +23,10 @@ const About: React.FC = () => {
               out of a passion for guiding businesses towards online success.
             </p>
             <p>
-              Our story begins with a small team of enthusiasts, united by a shared vision to
-              revolutionize the way brands connect with their audience online. Fueled by innovation
-              and driven by results, we embarked on a mission to empower businesses of all sizes to
-              soar to new heights in the digital realm.
+            What began as a creative passion turned into a full-fledged pursuit of combining logic and design. Through code and UI, I aim to bring clarity, usability, and personality into every digital product.
             </p>
             <p>
-              Join us on this journey as we continue to elevate brands and redefine what&#39;s
-              possible in the ever-evolving world of digital marketing. Together, let&#39;s reach
-              new heights and make your digital dreams a reality.
+            Join me on this path of crafting work that not only functions well but feels right. Engage and experience the creations we can built together so  Let's build interfaces that connect, engage, and inspire.
             </p>
           </div>
         </div>

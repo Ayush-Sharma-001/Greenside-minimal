@@ -33,30 +33,30 @@ const Navbar: React.FC = () => {
         className={`fixed top-0 left-0 w-full z-50 px-6 md:px-12 lg:px-24 py-2 md:py-4 transition-all duration-300
         ${isScrolled ? "bg-black" : "bg-transparent"}
         ${showNavbar ? "translate-y-0" : "-translate-y-full"}
-        text-white`}
+        text-[#FFFBDF]`}
       >
-        <div className="container mx-auto flex items-center justify-between py-4">
+        <div className="container mx-auto flex items-center justify-between py-2">
           {/* Logo */}
           <div className="text-xl font-bold cursor-pointer">
             <a href="#hero">BORINGDESIGNER/</a>
           </div>
 
           {/* Desktop Nav */}
-          <ul className="hidden md:flex md:space-x-10 lg:space-x-16 xl:space-x-20 text-sm font-medium">
+          <ul className="hidden md:flex md:space-x-10 lg:space-x-16 xl:space-x-20 text-sm font-medium text-[#FFFBDF]">
             <li className="hover:text-gray-400 cursor-pointer">
-              <a href="#about-us">About Us</a>
+              <a href="#about-me">About Me</a>
             </li>
             <li className="hover:text-gray-400 cursor-pointer">
-              <a href="#services">Services</a>
+              <a href="#skills">Skills</a>
             </li>
             <li className="hover:text-gray-400 cursor-pointer">
-              <a href="#case-studies">Case Studies</a>
+              <a href="#projects">Projects</a>
             </li>
             <li className="hover:text-gray-400 cursor-pointer">
-              <a href="#pricing">Pricing</a>
+              <a href="#process">Process</a>
             </li>
             <li className="hover:text-gray-400 cursor-pointer">
-              <a href="#contact-us">Contact Us</a>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
 
@@ -79,7 +79,7 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Menu (OUTSIDE nav!) */}
       <div
-        className={`fixed top-0 right-0 h-full w-full bg-black text-white transform ${
+        className={`fixed top-0 right-0 h-full w-full bg-black text-[#FFFBDF]transform ${
           isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300 ease-in-out z-50`}
       >
@@ -99,28 +99,28 @@ const Navbar: React.FC = () => {
         </button>
         <ul className="h-full w-full flex flex-col justify-center space-y-5 p-20 text-3xl">
           <li className="hover:text-gray-400 cursor-pointer">
-            <a href="#about-us" onClick={toggleMobileMenu}>
-              About Us
+            <a href="#about-me" onClick={toggleMobileMenu}>
+            About Me
             </a>
           </li>
           <li className="hover:text-gray-400 cursor-pointer">
-            <a href="#services" onClick={toggleMobileMenu}>
-              Services
+            <a href="#skills" onClick={toggleMobileMenu}>
+            Skills
             </a>
           </li>
           <li className="hover:text-gray-400 cursor-pointer">
-            <a href="#case-studies" onClick={toggleMobileMenu}>
-              Case Studies
+            <a href="#projects" onClick={toggleMobileMenu}>
+           Projects
             </a>
           </li>
           <li className="hover:text-gray-400 cursor-pointer">
-            <a href="#pricing" onClick={toggleMobileMenu}>
-              Pricing
+            <a href="#process" onClick={toggleMobileMenu}>
+            Process
             </a>
           </li>
           <li className="hover:text-gray-400 cursor-pointer">
             <a href="#contact-us" onClick={toggleMobileMenu}>
-              Contact Us
+            Contact
             </a>
           </li>
         </ul>

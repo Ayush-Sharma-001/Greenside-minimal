@@ -32,8 +32,8 @@ const How: React.FC = () => {
 
   return (
     <section
-      id="pricing"
-      className="bg-white text-black py-16 px-6 md:px-12 lg:px-24 h-full overflow-hidden"
+      id="process"
+      className="bg-[#FFFBDF] text-black py-16 px-6 md:px-12 lg:px-24 h-full overflow-hidden"
     >
       <div className="container mx-auto">
         <h2 className="text-3xl md:text-4xl lg:text-5xl text-left w-full leading-tight mb-12">
@@ -47,13 +47,13 @@ const How: React.FC = () => {
               {/* Left Line */}
               <div
                 ref={leftLineRef}
-                className={`absolute left-0 top-0 h-full w-1 bg-lime-600 transition-transform duration-[1500ms] ease-in-out origin-top ${
+                className={`absolute left-0 top-0 h-full w-1 bg-[#FD4A6C] transition-transform duration-[1500ms] ease-in-out origin-top ${
                   leftVisible ? "scale-y-100" : "scale-y-0"
                 }`}
               ></div>
 
               <div className="pl-8">
-                <h4 className="text-sm font-medium text-lime-600 mb-4">2 HOURS</h4>
+                <h4 className="text-sm font-medium text-[#FD4A6C] mb-4">2 HOURS</h4>
                 <h3 className="text-3xl md:text-5xl mb-12">Discovery Phase</h3>
                 <p className="text-gray-700 mb-6">
                   In this initial stage, we conduct a comprehensive analysis of your business, target
@@ -61,12 +61,12 @@ const How: React.FC = () => {
                 </p>
                 <ul className="space-y-8">
                   <li className="flex items-center">
-                    <span className="w-4 h-4 md:w-5 md:h-5 border-2 border-lime-600 rounded-full mr-4"></span>
-                    Conduct comprehensive business analysis
+                    <span className="w-4 h-4 md:w-5 md:h-5 border-2 border-[#FD4A6C] rounded-full mr-4"></span>
+                    Discuss vision and goals
                   </li>
                   <li className="flex items-center">
-                    <span className="w-4 h-4 md:w-5 md:h-5 border-2 border-lime-600 rounded-full mr-4"></span>
-                    Identify unique needs and objectives
+                    <span className="w-4 h-4 md:w-5 md:h-5 border-2 border-[#FD4A6C] rounded-full mr-4"></span>
+                    Research brand and audience
                   </li>
                 </ul>
               </div>
@@ -75,7 +75,7 @@ const How: React.FC = () => {
 
           {/* Dot Connector */}
           <div className="hidden md:flex items-center w-full justify-center my-2">
-            <span className="w-8 h-8 rounded-full border-4 border-lime-600 bg-white ml-1"></span>
+            <span className="w-8 h-8 rounded-full border-4 border-[#FD4A6C] bg-[#FFFBDF] ml-1"></span>
           </div>
 
           {/* Strategy Development (RIGHT) */}
@@ -84,13 +84,13 @@ const How: React.FC = () => {
               {/* Right Line */}
               <div
                 ref={rightLineRef}
-                className={`absolute right-0 top-0 h-full w-1 bg-lime-600 transition-transform duration-[1500ms] ease-in-out origin-top ${
+                className={`absolute right-0 top-0 h-full w-1 bg-[#FD4A6C] transition-transform duration-[1500ms] ease-in-out origin-top ${
                   rightVisible ? "scale-y-100" : "scale-y-0"
                 }`}
               ></div>
 
               <div className="pr-8">
-                <h4 className="text-sm font-medium text-lime-600 mb-4">1 WEEK</h4>
+                <h4 className="text-sm font-medium text-[#FD4A6C] mb-4">1 WEEK</h4>
                 <h3 className="text-3xl md:text-5xl mb-12">Strategy Development</h3>
                 <p className="text-gray-700 mb-6">
                   Based on the insights gathered during the discovery phase, we develop a tailored SEO
@@ -99,12 +99,12 @@ const How: React.FC = () => {
                 </p>
                 <ul className="space-y-8">
                   <li className="flex items-center">
-                    <span className="w-4 h-4 md:w-5 md:h-5 border-2 border-lime-600 rounded-full mr-4"></span>
-                    Create a tailored SEO strategy based on insights
+                    <span className="w-4 h-4 md:w-5 md:h-5 border-2 border-[#FD4A6C] rounded-full mr-4"></span>
+                    Design user flows and layout
                   </li>
                   <li className="flex items-center">
-                    <span className="w-4 h-4 md:w-5 md:h-5 border-2 border-lime-600 rounded-full mr-4"></span>
-                    Outline specific tactics and approaches
+                    <span className="w-4 h-4 md:w-5 md:h-5 border-2 border-[#FD4A6C] rounded-full mr-4"></span>
+                    Build and refine the frontend
                   </li>
                 </ul>
               </div>

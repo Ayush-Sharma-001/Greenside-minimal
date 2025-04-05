@@ -3,15 +3,15 @@ import React from "react";
 
 const Footer: React.FC = () => {
   return (
-    <footer id="contact-us" className="bg-white text-black h-full py-12 px-6 md:px-12 lg:px-24 flex flex-col justify-evenly">
+    <footer id="contact" className="bg-[#FFFBDF] text-black h-full py-12 px-6 md:px-12 lg:px-24 flex flex-col justify-evenly">
       <div className="container mx-auto space-y-12 ">
         {/* Top Section */}
         <div className="flex flex-col gap-6 md:flex-row justify-between items-center border-b border-gray-300 pb-8">
           <p className="text-center text-xl md:text-left text-gray-600 mb-8 md:mb-0">
-            Stay updated on our latest developments, insights, and opportunities by following us on <span className='font-semibold'>LinkedIn</span>.
+            Stay updated on our latest developments, insights, and opportunities by following us on <span className='font-semibold text-[#FD4A6C]'>LinkedIn</span>.
           </p>
-          <button className="border border-black  px-8 py-2 w-full md:w-2/3 hover:bg-black hover:text-white transition">
-            Let’s talk
+          <button className="border border-green-900  px-8 py-2 w-full md:w-2/3 hover:bg-[#FD4A6C] hover:text-white transition">
+            Let's talk
           </button>
         </div>
 
@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
 
           {/* Company Links */}
           <div className="col-span-1 md:text-right text-left">
-            <h4 className="text-xl font-semibold  mb-4">Company</h4>
+            <h4 className="text-xl text-[#fd4a6bb7] font-semibold  mb-4">Company</h4>
             <ul className="space-y-2">
             <li className="hover:text-gray-400 cursor-pointer">
             <a href="#about-us">About Us</a>
@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
 
           {/* Social Links */}
           <div className="col-span-1 md:text-right text-left">
-            <h4 className="text-xl font-semibold mb-4">Social</h4>
+            <h4 className="text-xl text-[#fd4a6bb7] font-semibold mb-4">Social</h4>
             <ul className="space-y-2">
               <li className="text-gray-700 hover:text-black cursor-pointer">Instagram</li>
               <li className="text-gray-700 hover:text-black cursor-pointer">Facebook</li>
@@ -59,7 +59,7 @@ const Footer: React.FC = () => {
       {/* Bottom Section */}
       <div className="container h-full mx-auto flex flex-col md:flex-row justify-between items-center text-sm     text-gray-600">
         <p className="text-center md:text-left m-4 mt-6 md:mb-0">
-          © 2025 developed by <a href="#">Ayush Sharma</a> for  <span className="text-lime-600">BORINGDESIGNER </span>. All rights reserved.
+          © 2025 developed by <a href="#">Ayush Sharma</a> for  <span className="text-[#fd4a6bb7]">BORINGDESIGNER </span>. All rights reserved.
         </p>
         <div className="flex space-x-4 mt-4 md:mt-0">
           <a href="#" className="hover:text-black">
