@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef, useEffect, useState } from "react";
 
-const How: React.FC = () => {
+const Process: React.FC = () => {
   const leftLineRef = useRef<HTMLDivElement>(null);
   const rightLineRef = useRef<HTMLDivElement>(null);
   const [leftVisible, setLeftVisible] = useState(false);
@@ -42,8 +42,8 @@ const How: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-1 gap-20 md:gap-0">
           {/* Discovery Phase (LEFT) */}
-          <div className="flex justify-end">
-            <div className="relative md:w-1/2 md:p-14">
+          <div className="flex justify-end  ">
+            <div className="relative md:w-1/2 md:p-14 ">
               {/* Left Line */}
               <div
                 ref={leftLineRef}
@@ -79,8 +79,8 @@ const How: React.FC = () => {
           </div>
 
           {/* Strategy Development (RIGHT) */}
-          <div className="flex justify-start ml-2">
-            <div className="relative md:w-1/2 md:p-14">
+          <div className="flex justify-start ml-2 ">
+            <div className="relative md:w-1/2 md:py-14  ">
               {/* Right Line */}
               <div
                 ref={rightLineRef}
@@ -116,4 +116,4 @@ const How: React.FC = () => {
   );
 };
 
-export default How;
+export default Process;

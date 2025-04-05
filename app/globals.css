@@ -30,3 +30,56 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans); /* Use Poppins as the default font */
 }
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.2s ease-in-out forwards;
+}
+
+@keyframes fadeInSubtle {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInSubtle {
+  animation: fadeInSubtle 0.5s ease-in forwards;
+}
+
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(50%, 0, 0);
+    transform: translate3d(50%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInRight {
+  animation-name: fadeInRight;
+  animation-duration: .3s;
+  animation-timing-function: ease-in-out;
+  /* animation-delay: 0.2s; */
+  animation-fill-mode: both;
+}
+

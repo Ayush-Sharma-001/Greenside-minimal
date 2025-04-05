@@ -14,9 +14,9 @@ const Hero: React.FC = () => {
   return (
     <section 
       id="hero"
-      className="
+      className=" 
     bg-gradient-to-r from-black to-[#fd4a6bd2]
-    text-white min-h-screen flex items-end pb-24 relative overflow-hidden"
+    text-white w-full flex items-end pb-24 relative overflow-hidden"
     >
       {/* Background texture layer */}
       <div
@@ -24,10 +24,10 @@ const Hero: React.FC = () => {
       ></div>
 
       {/* Main content layer */}
-      <div className="container mx-auto px-6 md:px-12 lg:px-24 flex flex-col md:flex-row items-end justify-between relative z-10">
+      <div className="container mx-auto px-6 md:px-12 lg:px-24 flex flex-col md:flex-row items-end justify-between relative space-y-8 md:space-y-0 z-10  md:mt-86 mt-48">
         {/* Left Content */}
         <div>
-          <h1 className="text-[2rem] md:text-5xl lg:text-6xl text-[#FFFBDF] leading-tight">
+          <h1 className="text-[2rem] md:text-5xl lg:text-6xl text-[#FFFBDF] leading-tight  mt-8 ">
             Build your vision with me <br />
             and explore the art <br />
             of digital creation
@@ -35,15 +35,15 @@ const Hero: React.FC = () => {
         </div>
 
         {/* Right Content */}
-        <div className="mt-8 md:mt-0">
+        <div className="mt-8 md:mt-0 ">
           <p className="text-gray-300 mb-6 max-w-sm  ">
             From concept to deployment, I bring ideas to life
             with precision, creativity, and a user-first mindset
           </p>
-          <button className="bg-[#fb2e54f3] text-white font-medium px-6 py-3  hover:shadow-lg  hover:bg-[#fb2e54] transition w-full">
-          View My Work
-          </button>
-        
+          <a href="#projects"><button  className="bg-[#fb2e54f3] text-white font-medium px-6 py-3  hover:shadow-lg  hover:bg-[#fb2e54] transition w-full mb-2 md:mb-0 rounded-md shadow-md">
+            View My Work
+          </button></a>
+
         </div>
       </div>
     </section>
