@@ -27,19 +27,19 @@ const Footer: React.FC = () => {
             <h4 className="text-xl text-[#fd4a6bb7] font-semibold  mb-4">Company</h4>
             <ul className="space-y-2">
             <li className="hover:text-gray-400 cursor-pointer">
-            <a href="#about-us">About Us</a>
+              <a href="#about-me">About Me</a>
             </li>
             <li className="hover:text-gray-400 cursor-pointer">
-            <a href="#services">Services</a>
+              <a href="#skills">Skills</a>
             </li>
             <li className="hover:text-gray-400 cursor-pointer">
-            <a href="#case-studies">Case Studies</a>
+              <a href="#projects">Projects</a>
             </li>
             <li className="hover:text-gray-400 cursor-pointer">
-            <a href="#pricing">Pricing</a>
+              <a href="#process">Process</a>
             </li>
             <li className="hover:text-gray-400 cursor-pointer">
-            <a href="#contact-us">Contact Us</a>
+              <a href="#contact">Contact</a>
             </li>
             </ul>
           </div>
