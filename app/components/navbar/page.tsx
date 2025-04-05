@@ -119,7 +119,7 @@ const Navbar: React.FC = () => {
             </a>
           </li>
           <li className="hover:text-gray-400 cursor-pointer">
-            <a href="#contact-us" onClick={toggleMobileMenu}>
+            <a href="#contact" onClick={toggleMobileMenu}>
             Contact
             </a>
           </li>

@@ -59,7 +59,7 @@ const Footer: React.FC = () => {
       {/* Bottom Section */}
       <div className="container h-full mx-auto flex flex-col md:flex-row justify-between items-center text-sm     text-gray-600">
         <p className="text-center md:text-left m-4 mt-6 md:mb-0">
-          © 2025 developed by <a href="#">Ayush Sharma</a> for  <span className="text-[#fd4a6bb7]">BORINGDESIGNER </span>. All rights reserved.
+          © 2025 developed by <a href="https://www.linkedin.com/in/ayush--sharma--?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Ayush Sharma</a> for  <span className="text-[#fd4a6bb7]">BORINGDESIGNER </span>. All rights reserved.
         </p>
         <div className="flex space-x-4 mt-4 md:mt-0">
           <a href="#" className="hover:text-black">
