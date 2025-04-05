@@ -19,14 +19,14 @@ const About: React.FC = () => {
         <div className="w-full flex justify-end">
           <div className="w-full md:w-1/2 text-gray-700 space-y-6 text-justify leading-6">
             <p>
-              In a digital landscape where visibility is paramount, our SEO company Lungo was born
+              In a digital landscape where visibility is paramount, our BORINGDESIGNER was born
               out of a passion for guiding businesses towards online success.
             </p>
             <p>
             What began as a creative passion turned into a full-fledged pursuit of combining logic and design. Through code and UI, I aim to bring clarity, usability, and personality into every digital product.
             </p>
             <p>
-            Join me on this path of crafting work that not only functions well but feels right. Engage and experience the creations we can built together so  Let's build interfaces that connect, engage, and inspire.
+            Join me on this path of crafting work that not only functions well but feels right. Engage and experience the creations we can built together so  Let&#39;s build interfaces that connect, engage, and inspire.
             </p>
           </div>
         </div>

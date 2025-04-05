@@ -10,8 +10,8 @@ const Footer: React.FC = () => {
           <p className="text-center text-xl md:text-left text-gray-600 mb-8 md:mb-0">
             Stay updated on our latest developments, insights, and opportunities by following us on <span className='font-semibold text-[#FD4A6C]'>LinkedIn</span>.
           </p>
-          <button className="border border-green-900  px-8 py-2 w-full md:w-2/3 hover:bg-[#FD4A6C] hover:text-white transition">
-            Let's talk
+          <button className="border border-green-900 px-8 py-2 w-full md:w-2/3 hover:bg-[#FD4A6C] hover:text-white transition">
+            Let&#39;s talk
           </button>
         </div>
 

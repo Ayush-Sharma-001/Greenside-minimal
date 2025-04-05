@@ -32,7 +32,7 @@ const Skill_section
             <h4 className="text-sm font-medium text-[#FD4A6C]  mb-4 md:mb-6 ">S / 2</h4>
             <h3 className="text-2xl md:text-3xl lg:text-4xl leading-tight  mb-4">Web Optimization</h3>
             <p className="text-gray-700 text-base/7">
-            My workflow refines your site's layout and flow, enhancing elements like <span className='font-semibold'>navigation</span> and <span className='font-semibold'>component hierarchy</span> to improve usability and user interaction.
+            My workflow refines your site&#39;s layout and flow, enhancing elements like <span className='font-semibold'>navigation</span> and <span className='font-semibold'>component hierarchy</span> to improve usability and user interaction.
 
 
             </p>
