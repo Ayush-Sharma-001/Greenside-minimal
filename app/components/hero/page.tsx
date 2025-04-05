@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
       <div className="container mx-auto px-6 md:px-12 lg:px-24 flex flex-col md:flex-row items-end justify-between relative space-y-8 md:space-y-0 z-10  md:mt-86 mt-48">
         {/* Left Content */}
         <div>
-          <h1 className="text-[2rem] md:text-5xl lg:text-6xl text-[#FFFBDF] leading-tight  mt-8 ">
+          <h1 className="text-[2.1rem] md:text-5xl lg:text-6xl text-[#FFFBDF] leading-tight  mt-8 ">
             Build your vision with me <br />
             and explore the art <br />
             of digital creation
