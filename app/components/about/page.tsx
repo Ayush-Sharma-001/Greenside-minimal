@@ -8,10 +8,10 @@ const About: React.FC = () => {
         {/* Left Section: Title */}
         <div className="w-full mb-8 md:mb-12">
           <h3 className="text-md font-medium tracking-widest text-[#FD4A6C] uppercase mb-4 md:mb-8">
-          About Me
+          About We
           </h3>
           <h2 className="text-3xl md:text-4xl lg:text-5xl leading-tight mb-6 md:mb-12">
-          Who I am: My story and purpose
+          Who we are: Our story and purpose
           </h2>
         </div>
  

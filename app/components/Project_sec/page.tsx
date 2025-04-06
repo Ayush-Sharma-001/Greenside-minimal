@@ -26,7 +26,7 @@ const projects = [
   {
     title: "DevLaunch Platform",
     description:
-            "A SaaS platform for developers to test and launch apps efficiently. Built dashboards, secure auth, and real-time analytics tools. Responsive and scalable architecture. UI focused on clarity and quick access to tools.",
+      "A SaaS platform for developers to test and launch apps efficiently. Built dashboards, secure auth, and real-time analytics tools. Responsive and scalable architecture. UI focused on clarity and quick access to tools.",
     whatIDid: ["React Development", "API Integration"],
     industry: ["Tech", "Global"],
     timeline: "6 Weeks",
@@ -36,7 +36,7 @@ const projects = [
   {
     title: "WellNest Health",
     description:
-    "Mental health startup website with a clean, calming UI. Features appointment booking, blog integration, and accessibility-first design. Built using modern frontend stack. Ensures smooth experience for all users.",
+      "Mental health startup website with a clean, calming UI. Features appointment booking, blog integration, and accessibility-first design. Built using modern frontend stack. Ensures smooth experience for all users.",
     whatIDid: ["Frontend Dev", "CMS Integration"],
     industry: ["Healthcare", "India"],
     timeline: "5 Weeks",
@@ -122,15 +122,13 @@ const Project_sec: React.FC = () => {
             {projects.map((project, index) => (
               <li
                 key={index}
-                className={`cursor-pointer flex items-center font-medium transition-all duration-500 ease-in-out ${
-                  activeIndex === index ? "text-[#FD4A6C]" : "text-gray-700"
-                }`}
+                className={`cursor-pointer flex items-center font-medium transition-all duration-500 ease-in-out ${activeIndex === index ? "text-[#FD4A6C]" : "text-gray-700"
+                  }`}
                 onClick={() => setActiveIndex(index)}
               >
                 <span
-                  className={`inline-block mr-3.5 h-[2px] transition-all duration-500 ease-in-out ${
-                    activeIndex === index ? "w-12 bg-[#FD4A6C]" : "w-1 bg-[#fd4a6bb7]"
-                  }`}
+                  className={`inline-block mr-3.5 h-[2px] transition-all duration-500 ease-in-out ${activeIndex === index ? "w-12 bg-[#FD4A6C]" : "w-1 bg-[#fd4a6bb7]"
+                    }`}
                 ></span>
                 {project.title}
               </li>
@@ -152,48 +150,66 @@ const Project_sec: React.FC = () => {
           {/* Content Layer */}
           <div
             key={activeIndex}
-             className="relative z-10 opacity-0 fadeInRight transition-all duration-700 ease-in-out">
+            className="relative z-10 opacity-0 fadeInRight transition-all duration-700 ease-in-out">
 
-         
-            <div className="flex justify-start gap-2.5 items-center mb-6">
-              <a href={activeProject.liveLink} target="_blank" rel="noopener noreferrer">
-                <button className="bg-[#FFFBDF] text-black p-1 md:p-3 flex items-center gap-2">
-                  <img src="/eye.png" alt="Live" className="w-8 h-8" />
-                </button>
-              </a>
-              <a href={activeProject.githubLink} target="_blank" rel="noopener noreferrer">
-                <button className="bg-[#FFFBDF] text-black p-1 md:p-3 flex items-center gap-2">
-                  <img src="/github.png" alt="GitHub" className="w-8 h-8" />
-                </button>
-              </a>
+
+            <div className="flex justify-between gap-2.5 items-center mb-6">
+              <div className="flex gap-2 items-center">
+                <a href={activeProject.liveLink} target="_blank" rel="noopener noreferrer">
+                  <button className="bg-[#FFFBDF] text-black p-1 md:p-3 flex items-center gap-2">
+                    <img src="/eye.png" alt="Live" className="w-8 h-8" />
+                  </button>
+                </a>
+                <a href={activeProject.githubLink} target="_blank" rel="noopener noreferrer">
+                  <button className="bg-[#FFFBDF] text-black p-1 md:p-3 flex items-center gap-2">
+                    <img src="/github.png" alt="GitHub" className="w-8 h-8" />
+                  </button>
+                </a>
+              </div>
+              {/*//slide number */}
+              <div
+                className="flex items-center gap-2 p-1 px-2 md:p-3 justify-center cursor-pointer"
+                onClick={() => setActiveIndex((prevIndex) => (prevIndex + 1) % projects.length)}
+              >
+                <img src="/arrow.png" alt="Arrow" className="h-12 w-12 " />
+              </div>
             </div>
+          </div>
 
-            <div className="flex flex-col justify-start items-start">
-              <h2 className="text-3xl md:text-3xl lg:text-4xl leading-tight mb-2 py-6 transition-all duration-700 ease-in-out">{activeProject.title}</h2>
-              <p className="text-gray-300 mb-6 py-6 md:text-justify leading-6 transition-all duration-700 ease-in-out">{activeProject.description}</p>
+          <div className="flex flex-col justify-start items-start">
+            <h2 className="text-3xl md:text-3xl lg:text-4xl leading-tight mb-2 py-6 transition-all duration-700 ease-in-out">{activeProject.title}</h2>
+            <p className="text-gray-300 mb-6 py-6 md:text-justify leading-6 transition-all duration-700 ease-in-out">{activeProject.description}</p>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm w-full py-6">
-                <div>
-                  <h4 className="text-gray-400 pb-2">What I did</h4>
-                  {activeProject.whatIDid.map((item, idx) => (
-                    <p key={idx} className="pb-2">{item}</p>
-                  ))}
-                </div>
-                <div>
-                  <h4 className="text-gray-400 pb-2">Industry</h4>
-                  {activeProject.industry.map((item, idx) => (
-                    <p key={idx} className="pb-2">{item}</p>
-                  ))}
-                </div>
-                <div>
-                  <h4 className="text-gray-400 pb-2">Timeline</h4>
-                  <p className="pb-2">{activeProject.timeline}</p>
-                </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-sm w-full py-6">
+              <div>
+                <h4 className="text-gray-400 pb-2">What I did</h4>
+                {activeProject.whatIDid.map((item, idx) => (
+                  <p key={idx} className="pb-2">{item}</p>
+                ))}
+              </div>
+              <div>
+                <h4 className="text-gray-400 pb-2">Industry</h4>
+                {activeProject.industry.map((item, idx) => (
+                  <p key={idx} className="pb-2">{item}</p>
+                ))}
+              </div>
+              <div>
+                <h4 className="text-gray-400 pb-2">Timeline</h4>
+                <p className="pb-2">{activeProject.timeline}</p>
+              </div>
+              <div >
+                {/* <span className="text-white  text-2xl font-semibold p-1 px-2 md:p-3 flex items-center gap-1">
+                  {activeIndex + 1} / {projects.length}
+                </span> */}
+                <h4 className="text-gray-400 pb-2">Project</h4>
+                <p className="pb-2">{activeIndex + 1} / {projects.length}</p>
+                
               </div>
             </div>
           </div>
         </div>
       </div>
+
     </section>
   );
 };

@@ -4,21 +4,21 @@ import React from "react";
 const skills = [
   {
     id: 1,
-    title: "Frontend Development",
-    tag: "S / 1",
+    title: "Web Development",
+    tag: "Service / 1",
     description: (
       <>
-        I build modern interfaces that attract <span className="font-semibold">attention</span> and deliver seamless user experiences, focusing on <span className="font-semibold">performance</span> and design precision to align with your creative goals.
+        We build modern interfaces that attract <span className="font-semibold">attention</span> and deliver seamless user experiences, focusing on <span className="font-semibold">performance</span> and design precision to align with your creative goals.
       </>
     ),
   },
   {
     id: 2,
     title: "Web Optimization",
-    tag: "S / 2",
+    tag: "Service / 2",
     description: (
       <>
-        My workflow refines your site&apos;s layout and flow, enhancing elements like <span className="font-semibold">navigation</span> and <span className="font-semibold">component hierarchy</span> to improve usability and user interaction.
+        Our workflow refines your site&apos;s layout and flow, enhancing elements like <span className="font-semibold">navigation</span> and <span className="font-semibold">component hierarchy</span> to improve usability and user interaction.
       </>
     ),
   },
@@ -30,10 +30,10 @@ const skills = [
         <span className="md:block">Building</span>
       </>
     ),
-    tag: "S / 3",
+    tag: "Service / 3",
     description: (
       <>
-        I craft personalized design <span className="font-semibold">systems</span> to build sleek, high-performing websites, <span className="font-semibold">boosting</span> user experience and brand presence across all platforms.
+        we craft personalized design <span className="font-semibold">systems</span> to build sleek, high-performing websites, <span className="font-semibold">boosting</span> user experience and brand presence across all platforms.
       </>
     ),
   },
@@ -47,15 +47,18 @@ const SkillsSection = () => {
         <h2 className="text-3xl md:text-4xl lg:text-5xl leading-tight">What I can do for you</h2>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10 ">
         {skills.map((skill) => (
           <div
             key={skill.id}
-            className="h-full p-4 md:p-12 rounded-sm bg-[#fd4a6b7c]"
+            className="h-full p-4 md:p-12 relative overflow-hidden rounded-xl bg-gradient-to-r from-black to-[#fd4a6bd2]"
           >
+            <div
+              className="absolute inset-0 bg-[url('/texture2.jpg')] bg-cover bg-center opacity-10 pointer-events-none z-0  "
+            ></div>
             <h4 className="text-sm font-medium text-[#FD4A6C] mb-4 md:mb-6">{skill.tag}</h4>
-            <h3 className="text-2xl md:text-3xl lg:text-4xl leading-tight mb-4">{skill.title}</h3>
-            <p className="text-gray-700 text-base/7">{skill.description}</p>
+            <h3 className="text-2xl md:text-3xl lg:text-4xl text-[#FFFBDF] leading-tight mb-4 font-medium  ">{skill.title}</h3>
+            <p className="text-[#fffbdfd5] text-base/7 ">{skill.description}</p>
           </div>
         ))}
       </div>
